@@ -1,0 +1,27 @@
+@import "antd/dist/antd.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root {
+    width: 100vw;
+}
+.filter {
+    padding: 20px;
+}
+.layout-container {
+    .header {
+        color: white;
+        height: 64px;
+    }
+    footer {
+        height: 70px;
+    }
+    .layout-main {
+        height: calc(100vh - 64px - 70px);
+        overflow-y: auto;
+
+        .content {
+            min-height: calc(100vh - 64px - 70px);
+        }
+    }
+}
