@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const baseURL = "http://127.0.0.1:3002";
+const baseURL = "http://47.96.119.76:3002";
 const obj = {
     async request(url = "", options = { method: "get" }) {
         return await fetch(`${baseURL}${url}`, options).then((r) => r.json());
